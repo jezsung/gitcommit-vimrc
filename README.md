@@ -7,7 +7,7 @@ A minimal Vim configuration that enforces git commit message best practices.
 - **72 character body** - Wrap text width to 72 with a visual column guide at 73
 - **Spell checking** - Enables English spell checking for commit messages
 
-<video src="demo.mp4" autoplay loop muted playsinline width="600"></video>
+![Demo](demo.gif)
 
 ## Setup
 
