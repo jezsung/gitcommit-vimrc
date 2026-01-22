@@ -1,13 +1,11 @@
-# gitcommit-vimrc
-
 A minimal Vim configuration that enforces git commit message best practices.
-
-## Features
 
 - **50 character subject line** - Automatically truncates the first line to 50 characters
 - **Blank second line** - Enforces a blank line between subject and body
 - **72 character body** - Wrap text width to 72 with a visual column guide at 73
 - **Spell checking** - Enables English spell checking for commit messages
+
+<video src="demo.mp4" autoplay loop muted playsinline width="600"></video>
 
 ## Setup
 
