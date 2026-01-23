@@ -8,6 +8,7 @@ augroup GitCommit
     autocmd FileType gitcommit autocmd TextChangedI,TextChanged <buffer> call s:MaxLength(1, 50)
     autocmd FileType gitcommit autocmd TextChangedI,TextChanged <buffer> call s:Blank(2)
     autocmd FileType gitcommit setlocal textwidth=72 formatoptions+=tcqaw colorcolumn=73
+    autocmd FileType gitcommit setlocal autoindent
     autocmd FileType gitcommit setlocal spell spelllang=en_us
 augroup END
 
