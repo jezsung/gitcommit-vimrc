@@ -11,15 +11,17 @@ A minimal Vim configuration that enforces git commit message best practices.
 
 ## Setup
 
-### 1. Set Vim as your git editor
+### Vim
+
+#### 1. Set Vim as your git editor
 
 ```bash
 git config --global core.editor "vim"
 ```
 
-### 2. Download the configuration
+#### 2. Download the configuration
 
-#### New to Vim
+##### New to Vim
 
 If you don't have a `~/.vimrc` file yet, follow these instructions. This will create a new Vim configuration file for you.
 
@@ -27,7 +29,7 @@ If you don't have a `~/.vimrc` file yet, follow these instructions. This will cr
 curl -fsSL https://raw.githubusercontent.com/jezsung/gitcommit-vimrc/main/.vimrc -o ~/.vimrc
 ```
 
-#### Existing Vim configuration
+##### Existing Vim configuration
 
 If you already have a `~/.vimrc` file with your own customizations, follow these instructions. This will add the git commit settings to your existing configuration without overwriting it.
 
@@ -41,6 +43,21 @@ Then add the source line to your existing `~/.vimrc`:
 
 ```bash
 echo 'source ~/.gitcommit.vim' >> ~/.vimrc
+```
+
+### Neovim
+
+#### 1. Set Neovim as your git editor
+
+```bash
+git config --global core.editor "nvim"
+```
+
+#### 2. Download the ftplugin
+
+```bash
+mkdir -p ~/.config/nvim/ftplugin
+curl -fsSL https://raw.githubusercontent.com/jezsung/gitcommit-vimrc/main/ftplugin/gitcommit.lua -o ~/.config/nvim/ftplugin/gitcommit.lua
 ```
 
 ## Usage
